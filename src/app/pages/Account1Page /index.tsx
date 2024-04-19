@@ -7,8 +7,9 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
-import styles from "./Account1Page.module.scss";
 import Breadcrumb from "core/app/components/Breadcrumb";
+
+import styles from "./Account1Page.module.scss";
 
 const cx = classNames.bind(styles);
 
@@ -67,146 +68,142 @@ export default function Account1Page() {
   return (
     <Box
       sx={{
-        marginTop: {lg: "100px", sm: "110px", xs: "67px" },
+        marginTop: { lg: "100px", sm: "110px", xs: "67px" },
         paddingTop: { sm: "78px", xs: "10px" },
         // maxWidth: "45%"
       }}
     >
-             <Breadcrumb breadcrumbs={breadcrumbs} />
-     
+      <Breadcrumb breadcrumbs={breadcrumbs} />
+
       <Container maxWidth="lg" sx={{ padding: "10px 5px", marginTop: "20px" }}>
         {/* <h3 style={{ fontSize: "20px", marginBottom: "10px" }}>
           Thông tin tài khoản
         </h3> */}
-            <Grid
-              container
-              spacing={1}
-              style={{
-                padding: "20px",
-                // border: "1px solid #9999",
-              }}
-            >
-              <Grid item xs={7}>
-                <h3 style={{ fontSize: "20px" }}>Tài khoản</h3>
+        <Grid
+          container
+          spacing={1}
+          style={{
+            padding: "20px",
+            // border: "1px solid #9999",
+          }}
+        >
+          <Grid item xs={7}>
+            <h3 style={{ fontSize: "20px" }}>Tài khoản</h3>
 
+            <div className={cx("input_form")}>
+              <label>Họ</label>
+              <input type="text" />
+            </div>
+
+            <div className={cx("input_form")}>
+              <label>Tên</label>
+              <input type="text" />
+            </div>
+          </Grid>
+          <Grid item xs={5}>
+            <div style={{ display: "grid" }}>
+              <img
+                style={{ margin: "0 auto" }}
+                src="https://i.postimg.cc/yNsWg03V/Image-11.png"
+                alt="img"
+              />
+              <Button
+                component="label"
+                role={undefined}
+                variant="outlined"
+                tabIndex={-1}
+                style={{ fontSize: "10px" }}
+              >
+                Chọn ảnh
+                <VisuallyHiddenInput type="file" />
+              </Button>
+            </div>
+          </Grid>
+          <Grid item xs={12}>
+            <div className={cx("input_form")}>
+              <label>Email</label>
+              <input type="text" />
+            </div>
+          </Grid>
+
+          <Grid item xs={12}>
+            <div className={cx("input_form")}>
+              <label>Số điện thoại</label>
+              <input type="text" />
+            </div>
+          </Grid>
+
+          <Button className={cx("order_button")}>Lưu thay đổi</Button>
+        </Grid>
+        <Grid
+          container
+          spacing={1}
+          style={{
+            padding: "20px",
+            // border: "1px solid #9999",
+            margin: "20px 0",
+          }}
+        >
+          <Grid item xs={12}>
+            <h3 style={{ fontSize: "20px" }}>Địa chỉ</h3>
+
+            <div className={cx("input_form")}>
+              <label>Địa chỉ</label>
+              <input type="text" />
+            </div>
+
+            <Grid container spacing={1}>
+              <Grid item xs={6}>
                 <div className={cx("input_form")}>
-                  <label>Họ</label>
+                  <label>Tỉnh</label>
                   <input type="text" />
                 </div>
-
+              </Grid>
+              <Grid item xs={6}>
                 <div className={cx("input_form")}>
-                  <label>Tên</label>
+                  <label>Huyện</label>
                   <input type="text" />
                 </div>
-              </Grid>
-              <Grid item xs={5}>
-                <div style={{ display: "grid" }}>
-                  <img
-                    style={{ margin: "0 auto" }}
-                    src="https://i.postimg.cc/yNsWg03V/Image-11.png"
-                    alt="img"
-                  />
-                  <Button
-                    component="label"
-                    role={undefined}
-                    variant="outlined"
-                    tabIndex={-1}
-                    style={{ fontSize: "10px" }}
-                  >
-                    Chọn ảnh
-                    <VisuallyHiddenInput type="file" />
-                  </Button>
-                </div>
-              </Grid>
-              <Grid item xs={12}>
-              <div className={cx("input_form")}>
-                  <label>Email</label>
-                  <input type="text" />
-                </div>
-              </Grid>
-             
-              <Grid item xs={12}>
-              <div className={cx("input_form")}>
-                  <label>Số điện thoại</label>
-                  <input type="text" />
-                </div>
-              </Grid>
-               
-                <Button className={cx("order_button")}>Lưu thay đổi</Button>
-
-            
-
-                
-            </Grid>
-            <Grid
-              container
-              spacing={1}
-              style={{
-                padding: "20px",
-                // border: "1px solid #9999",
-                margin: "20px 0",
-              }}
-            >
-              <Grid item xs={12}>
-                <h3 style={{ fontSize: "20px" }}>Địa chỉ</h3>
-
-                <div className={cx("input_form")}>
-                  <label>Địa chỉ</label>
-                  <input type="text" />
-                </div>
-
-                <Grid container spacing={1}>
-                  <Grid item xs={6}>
-                    <div className={cx("input_form")}>
-                      <label>Tỉnh</label>
-                      <input type="text" />
-                    </div>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <div className={cx("input_form")}>
-                      <label>Huyện</label>
-                      <input type="text" />
-                    </div>
-                  </Grid>
-                </Grid>
-                <Button className={cx("order_button")}>Lưu thay đổi</Button>
               </Grid>
             </Grid>
+            <Button className={cx("order_button")}>Lưu thay đổi</Button>
+          </Grid>
+        </Grid>
 
-            <Grid
-              container
-              spacing={1}
-              style={{
-                padding: "20px",
-                // border: "1px solid #9999",
-                margin: "20px 0",
-              }}
-            >
-              <Grid item xs={12}>
-                <h3 style={{ fontSize: "20px" }}>Đổi mật khẩu</h3>
+        <Grid
+          container
+          spacing={1}
+          style={{
+            padding: "20px",
+            // border: "1px solid #9999",
+            margin: "20px 0",
+          }}
+        >
+          <Grid item xs={12}>
+            <h3 style={{ fontSize: "20px" }}>Đổi mật khẩu</h3>
 
+            <div className={cx("input_form")}>
+              <label>Mật khẩu hiện tại</label>
+              <input type="text" />
+            </div>
+
+            <Grid container spacing={2}>
+              <Grid item xs={6}>
                 <div className={cx("input_form")}>
-                  <label>Mật khẩu hiện tại</label>
+                  <label>Mật khẩu mới</label>
                   <input type="text" />
                 </div>
-
-                <Grid container spacing={2}>
-                  <Grid item xs={6}>
-                    <div className={cx("input_form")}>
-                      <label>Mật khẩu mới</label>
-                      <input type="text" />
-                    </div>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <div className={cx("input_form")}>
-                      <label>Nhập lại mật khẩu</label>
-                      <input type="text" />
-                    </div>
-                  </Grid>
-                </Grid>
-                <Button className={cx("order_button")}>Lưu thay đổi</Button>
+              </Grid>
+              <Grid item xs={6}>
+                <div className={cx("input_form")}>
+                  <label>Nhập lại mật khẩu</label>
+                  <input type="text" />
+                </div>
               </Grid>
             </Grid>
+            <Button className={cx("order_button")}>Lưu thay đổi</Button>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
