@@ -38,7 +38,7 @@ function Header() {
     "/news": `Tin tức`,
     "/introduce": `Giới thiệu`,
     "/contact": `Liên hệ`,
-    '/admin/login': `admin`
+    // '/admin/login': `admin`
   };
 
   const navItems1 = {

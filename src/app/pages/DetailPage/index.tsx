@@ -90,7 +90,7 @@ export default function DetailPage() {
   return (
     <Box
       sx={{
-        marginTop: {sm: "112px", xs: "67px" },
+        marginTop: {sm: "110px", xs: "67px" },
         paddingTop: { sm: "78px", xs: "10px" },
       }}
     >
