@@ -9,11 +9,11 @@ import { styled } from "@mui/material/styles";
 
 import Breadcrumb from "core/app/components/Breadcrumb";
 
-import styles from "./Account1Page.module.scss";
+import styles from "./AccountMobilePage.module.scss";
 
 const cx = classNames.bind(styles);
 
-export default function Account1Page() {
+export default function AccountMobilePage() {
   function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     event.preventDefault();
     console.info("You clicked a breadcrumb.");
