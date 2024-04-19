@@ -21,12 +21,12 @@ import IntroducePage from "core/app/pages/IntroducePage";
 import LoginPageAdmin from "core/app/pages/admin/LoginPage";
 import DashboardPage from "core/app/pages/admin/DashboardPage";
 import Account2Page from "core/app/pages/Account2Page";
-import Account1Page from "core/app/pages/Account1Page ";
+import Account1Page from "core/app/pages/AccountMobilePage ";
 import DetailNewPage from "core/app/pages/DetailNewPage ";
 import SearchPage from "core/app/pages/SearchPage";
 import DetailAccountPage from "core/app/pages/DetailAccount";
 import HistoryPage from "core/app/pages/HistoryPage";
-import AccountMobilePage from "core/app/pages/Account1Page ";
+import AccountMobilePage from "core/app/pages/AccountMobilePage ";
 
 
 const publicRoutes: PublicRoutes[] = [
