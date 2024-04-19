@@ -25,8 +25,8 @@ import DetailNewPage from "core/app/pages/DetailNewPage ";
 import SearchPage from "core/app/pages/SearchPage";
 import DetailAccountPage from "core/app/pages/DetailAccount";
 import HistoryPage from "core/app/pages/HistoryPage";
-import AccountMobilePage from "core/app/pages/AccountMobilePage";
-
+import AccountMobilePage from "core/app/pages/AccountMobilePage ";
+ 
 
 const publicRoutes: PublicRoutes[] = [
   {
