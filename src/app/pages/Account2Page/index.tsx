@@ -172,7 +172,7 @@ export default function Account2Page() {
   return (
     <Box
       sx={{
-        marginTop: {sm: "110px", xs: "67px" },
+        marginTop: {lg: "108px", sm: "110px", xs: "67px" },
         paddingTop: { sm: "78px", xs: "10px" },
         // maxWidth: "45%"
       }}
