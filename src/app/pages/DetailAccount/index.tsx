@@ -63,7 +63,7 @@ export default function DetailAccountPage() {
   return (
     <Box
       sx={{
-        marginTop: {lg: "103px", sm: "110px", xs: "67px" },
+        marginTop: {lg: "107px", sm: "110px", xs: "67px" },
         paddingTop: { sm: "78px", xs: "10px" },
         // maxWidth: "45%"
       }}

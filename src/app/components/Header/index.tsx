@@ -258,7 +258,7 @@ function Header() {
                     >
                       {infor ? (
                         <Link
-                          style={{ color: "white", padding: "9px 0", display: "flex", alignItems: "center" }}
+                          style={{ color: "white", padding: "7px 0", display: "flex", alignItems: "center" }}
                           to="/account"
                         >
                           <img src="https://i.postimg.cc/NF7spTM8/Image-19.png" alt="img" style={{marginRight: '10px'}} />
@@ -270,7 +270,7 @@ function Header() {
                             style={{
                               display: "flex",
                               alignItems: "center",
-                              padding: "5px",
+                              padding: "8px 0 8px 0",
                             }}
                           >
                             <p style={{ marginTop: "7px" }}>
@@ -293,7 +293,7 @@ function Header() {
                                 />
                               </svg>
                             </p>
-                            <div>
+                            <div style={{padding: '3px 0'}}>
                               <Link
                                 to={"/login"}
                                 className={classes.navtopUserLink}

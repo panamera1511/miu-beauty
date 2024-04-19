@@ -15,7 +15,7 @@ export const HomePage = () => {
   return (
     <Box
       sx={{
-        marginTop: { xs: "80px", lg: "190px" },
+        marginTop: { xs: "78px", lg: "184px" },
       }}
     >
       <div className={cx("banner_main")}>
